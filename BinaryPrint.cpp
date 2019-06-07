@@ -49,7 +49,7 @@ void Binary(int current, int stop)
 
 		bin[i++] = hand;
 
-		hold /= 10;
+		hold = hold / 10;
 	}
 
 	if (1 == carry)
