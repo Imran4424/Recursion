@@ -1,9 +1,23 @@
 #include <iostream>
 using namespace std;
 
-void Binary(int current)
+void Binary(int current, int stop)
 {
-	
+	if(current == stop)
+	{
+		return;
+	}
+
+	int carry = 1;
+
+	int bin[10];
+
+	int hold = current;
+
+	while(hold != 0)
+	{
+		
+	}
 }
 
 
