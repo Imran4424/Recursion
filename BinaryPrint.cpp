@@ -52,8 +52,19 @@ void Binary(int current, int stop)
 
 	if (1 == carry)
 	{
-		/* code */
+		bin[i] = carry;
 	}
+
+	current = 0;
+
+	for (int k = i; k >= 0; --k)
+	{
+		current = current * 10 + bin[k];
+	}
+
+	cout << current << endl;
+
+	Binary(current, stop);
 }
 
 
