@@ -10,7 +10,7 @@ void Binary(int current, int stop)
 
 	int carry = 1;
 
-	int bin[10], hand, i = 0;
+	int bin[10], hand = 0, i = 0;
 
 	int hold = current;
 
@@ -59,7 +59,7 @@ void Binary(int current, int stop)
 
 	for (int k = i; k >= 0; --k)
 	{
-		current = current * 10 + bin[k];
+		current = (current * 10) + bin[k];
 	}
 
 	cout << current << endl;
