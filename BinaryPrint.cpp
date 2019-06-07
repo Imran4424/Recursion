@@ -70,7 +70,7 @@ void Binary(int current, int stop)
 
 int main(int argc, char const *argv[])
 {
-	Binary(0, 111);
+	Binary(0, 11);
 
 	return 0;
 }
