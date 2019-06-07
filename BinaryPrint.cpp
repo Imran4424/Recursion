@@ -10,7 +10,7 @@ void Binary(int current, int stop)
 
 	int carry = 1;
 
-	int bin[10], hand;
+	int bin[10], hand, i = 0;
 
 	int hold = current;
 
@@ -33,8 +33,26 @@ void Binary(int current, int stop)
 		}
 		else if (0 == digit)
 		{
-			
+			if (1 == carry)
+			{
+				hand = 1;
+				carry = 0;
+			}
+			else
+			{
+				hand = 0;
+				carry = 0;
+			}
 		}
+
+		bin[i++] = hand;
+
+		hold /= 10;
+	}
+
+	if (1 == carry)
+	{
+		/* code */
 	}
 }
 
