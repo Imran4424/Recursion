@@ -16,7 +16,15 @@ void Binary(int current, int stop)
 
 	while(hold != 0)
 	{
-		
+		int digit = hold % 10;
+
+		if(1 == digit)
+		{
+			if (1 == carry)
+			{
+				
+			}
+		}
 	}
 }
 
