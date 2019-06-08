@@ -59,7 +59,7 @@ void Binary(int current, int stop)
 
 	current = 0;
 
-	for (int k = i; k >= 0; --k)
+	for (int k = i-1; k >= 0; --k)
 	{
 		current = ((current * 10) + bin[k]);
 	}
@@ -72,7 +72,7 @@ void Binary(int current, int stop)
 
 int main(int argc, char const *argv[])
 {
-	Binary(0, 1);
+	Binary(0, 11);
 
 	return 0;
 }
