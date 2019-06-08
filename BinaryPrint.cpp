@@ -61,7 +61,7 @@ void Binary(int current, int stop)
 
 	for (int k = i; k >= 0; --k)
 	{
-		current = (current * 10) + bin[k];
+		current = ((current * 10) + bin[k]);
 	}
 
 	//cout << current << endl;
