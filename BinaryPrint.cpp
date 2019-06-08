@@ -10,7 +10,7 @@ void Binary(int current, int stop)
 
 	int carry = 1;
 
-	int bin[10], hand = 0, i = 0;
+	int bin[10] = {0}, hand = 0, i = 0;
 
 	int hold = current;
 
@@ -59,7 +59,7 @@ void Binary(int current, int stop)
 
 	current = 0;
 
-	for (int k = i-1; k >= 0; --k)
+	for (int k = i; k >= 0; --k)
 	{
 		current = ((current * 10) + bin[k]);
 	}
@@ -72,7 +72,7 @@ void Binary(int current, int stop)
 
 int main(int argc, char const *argv[])
 {
-	Binary(0, 11);
+	Binary(0, 111);
 
 	return 0;
 }
