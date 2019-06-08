@@ -45,7 +45,7 @@ void Binary(int current, int stop)
 			}
 		}
 
-		cout << hand << endl;
+		//cout << hand << endl;
 
 		bin[i++] = hand;
 
@@ -64,7 +64,7 @@ void Binary(int current, int stop)
 		current = ((current * 10) + bin[k]);
 	}
 
-	//cout << current << endl;
+	cout << current << endl;
 
 	Binary(current, stop);
 }
