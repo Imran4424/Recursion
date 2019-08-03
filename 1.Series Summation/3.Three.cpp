@@ -11,7 +11,7 @@ int NormalSeries(int n)
 {
 	if(n == 4)
 	{
-		return 1;
+		return 4;
 	}
 
 	return n + NormalSeries(n-2);
