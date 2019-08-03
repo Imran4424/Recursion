@@ -14,7 +14,7 @@ int NormalSeries(int n)
 		return 2;
 	}
 
-	return n + NormalSeries(n-8);
+	return n + NormalSeries(n-3);
 }
 
 
