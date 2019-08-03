@@ -1,5 +1,5 @@
 /*
-	1.2 + 2.3 + 3.4 + 11 + .... + n
+	1.2 + 2.3 + 3.4 + .... + n
 
 	find the nth sum of this series using recursion
 */
