@@ -9,7 +9,7 @@ using namespace std;
 
 int NormalSeries(int n)
 {
-	if(n == 4)
+	if(n == 1)
 	{
 		return 1;
 	}
