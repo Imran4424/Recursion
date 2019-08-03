@@ -3,3 +3,7 @@
 
 	find the nth sum of this series using recursion
 */
+
+#include <iostream>
+using namespace std;
+
