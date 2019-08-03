@@ -7,7 +7,7 @@
 #include <iostream>
 using namespace std;
 
-int NormalSeries(int n)
+int MultiSeries(int n)
 {
 	if(n == 1)
 	{
