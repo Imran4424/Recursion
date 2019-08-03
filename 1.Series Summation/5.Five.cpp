@@ -9,9 +9,9 @@ using namespace std;
 
 int NormalSeries(int n)
 {
-	if(n == 4)
+	if(n == 2)
 	{
-		return 4;
+		return 2;
 	}
 
 	return n + NormalSeries(n-8);
