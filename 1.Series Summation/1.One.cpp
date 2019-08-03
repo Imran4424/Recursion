@@ -20,7 +20,7 @@ int NormalSeries(int n)
 
 int main(int argc, char const *argv[])
 {
-	cout << "enter the nth term of the "
+	cout << "enter the nth term of the series"
 
 	int n;
 	cin >> n;
