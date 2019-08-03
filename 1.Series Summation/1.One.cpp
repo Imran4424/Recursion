@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
 	int n;
 	cin >> n;
 
-	cout << "The nth summtion of this series is: "
+	cout << "The nth summtion of this series is: " << NormalSeries(n) << endl;
 
 	return 0;
 }
