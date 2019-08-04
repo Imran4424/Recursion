@@ -24,12 +24,12 @@ void Column(int start, int stop)
 		return;
 	}
 
-	Column(start+1, stop);
+	Column(start+1, stop); // layer two recursion
 }
 
 void Row(int start, int stop)
 {
-	Column(1, start);
+	Column(1, start); // secondary call 
 
 
 	if (start == stop)
@@ -37,12 +37,13 @@ void Row(int start, int stop)
 		return;
 	}
 
-	Row(start+1, stop);
+	Row(start+1, stop); // layer one recursion
 }
 
 int main(int argc, char const *argv[])
 {
-
+	// this is a two layer recursion code
+	// primary call
 	Row(1, 5); // current pyramid has 5 columns
 
 	return 0;
