@@ -11,11 +11,10 @@ int MultiSquareSeries(int n)
 {
 	if(n == 1)
 	{
-		return 1*1;
+		return 1*1*1;
 	}
 
 	int theN = ((n - 2) / 3) + 1; // hence nth-term = a+(n-1)d 
-
 
 	return n*n + MultiSquareSeries(n-2);
 }
