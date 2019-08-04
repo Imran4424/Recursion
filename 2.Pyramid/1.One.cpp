@@ -33,6 +33,8 @@ void Row(int start, int stop)
 	{
 		return;
 	}
+
+	Row(start+1, stop);
 }
 
 int main(int argc, char const *argv[])
