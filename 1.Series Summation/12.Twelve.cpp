@@ -11,7 +11,7 @@ int MultiSquareSeries(int n)
 {
 	if(n == 1)
 	{
-		return 1*2*2;
+		return 1*1*2*2;
 	}
 
 	
