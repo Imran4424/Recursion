@@ -18,7 +18,7 @@ int MultiSquareSeries(int n)
 
 	int second = n - theN - 1; // calculating for this series 
 
-	return n* + MultiSquareSeries(n-1);
+	return n*second*second + MultiSquareSeries(n-1);
 }
 
 
