@@ -9,9 +9,9 @@ using namespace std;
 
 int MultiSeries(int n)
 {
-	if(n == 2)
+	if(n == 1)
 	{
-		return 2*1;
+		return 1;
 	}
 
 	int theN = ((n - 2) / 3) + 1; // hence nth-term = a+(n-1)d 
