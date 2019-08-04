@@ -9,9 +9,9 @@ using namespace std;
 
 int MultiSeries(int n)
 {
-	if(n == 1)
+	if(n == 2)
 	{
-		return 1*2;
+		return 2*1;
 	}
 
 	return n * (n + 1) + MultiSeries(n-1);
