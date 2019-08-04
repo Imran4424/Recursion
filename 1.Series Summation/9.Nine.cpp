@@ -7,7 +7,7 @@
 #include <iostream>
 using namespace std;
 
-int MultiSeries(int n)
+int SquareSeries(int n)
 {
 	if(n == 1)
 	{
