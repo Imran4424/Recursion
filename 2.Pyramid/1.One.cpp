@@ -10,6 +10,9 @@ build the  pyramid using recursion
 
 */
 
+#include <iostream>
+using namespace std;
+
 void Column(int start, int stop)
 {
 	cout << start ;
