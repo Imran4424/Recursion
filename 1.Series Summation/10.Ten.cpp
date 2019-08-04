@@ -16,9 +16,9 @@ int MultiSquareSeries(int n)
 
 	int theN = ((n - 1) / 1) + 1; // hence nth-term = a+(n-1)d
 
-	theN--; // decrementing one for this series 
+	int second = n - theN - 1; // calculating for this series 
 
-	return n*(n - theN)*(n - theN) + MultiSquareSeries(n-1);
+	return n*(n + theN)*(n + theN) + MultiSquareSeries(n-1);
 }
 
 
