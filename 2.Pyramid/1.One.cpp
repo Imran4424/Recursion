@@ -24,9 +24,9 @@ void Column(int start, int stop)
 	Column(start+1, stop);
 }
 
-void Row(int n)
+void Row(int start, int stop)
 {
-
+	
 }
 
 int main(int argc, char const *argv[])
