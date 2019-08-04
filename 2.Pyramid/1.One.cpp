@@ -39,6 +39,7 @@ void Row(int start, int stop)
 
 int main(int argc, char const *argv[])
 {
-	
+	Row(1, 5);
+
 	return 0;
 }
