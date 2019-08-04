@@ -10,6 +10,11 @@ build the  pyramid using recursion
 
 */
 
+void Row(int n)
+{
+	
+}
+
 int main(int argc, char const *argv[])
 {
 	
