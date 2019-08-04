@@ -15,7 +15,7 @@ int SquareSeries(int n)
 	}
 
 
-	return MultiSeries(n-2);
+	return SquareSeries(n-2);
 }
 
 
