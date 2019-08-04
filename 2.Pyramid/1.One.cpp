@@ -20,6 +20,8 @@ void Column(int start, int stop)
 
 		return;
 	}
+
+	Column(start+1, stop);
 }
 
 void Row(int n)
