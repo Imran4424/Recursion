@@ -11,7 +11,7 @@ int MultiSeries(int n)
 {
 	if(n == 1)
 	{
-		return 1;
+		return 1*3;
 	}
 
 	int theN = ((n - 2) / 3) + 1; // hence nth-term = a+(n-1)d 
