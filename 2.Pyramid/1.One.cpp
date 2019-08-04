@@ -26,7 +26,7 @@ void Column(int start, int stop)
 
 void Row(int start, int stop)
 {
-	
+	Column(1, start);
 }
 
 int main(int argc, char const *argv[])
