@@ -14,7 +14,9 @@ int MultiSquareSeries(int n)
 		return 1*1*1;
 	}
 
-	int theN = ((n - 1) / 1) + 1; // hence nth-term = a+(n-1)d 
+	int theN = ((n - 1) / 1) + 1; // hence nth-term = a+(n-1)d
+
+	theN--; 
 
 	return n*n + MultiSquareSeries(n-1);
 }
