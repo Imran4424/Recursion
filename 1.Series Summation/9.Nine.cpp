@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
 	int n;
 	cin >> n;
 
-	cout << "The nth summtion of this series is: " << MultiSeries(n) << endl;
+	cout << "The nth summtion of this series is: " << SquareSeries(n) << endl;
 
 	return 0;
 }
