@@ -1,5 +1,5 @@
 /*
-	1.3.5.7 + 3.5.7.9 + 5.7.9.11 + .... + n
+	1.2.3 + 2.3.4 + 3.4.5 + .... + n
 
 	find the nth sum of this series using recursion
 */
@@ -11,11 +11,11 @@ int MultiSeries(int n)
 {
 	if(n == 1)
 	{
-		return 1*3*5*7;
+		return 1*2*3;
 	}
 
 
-	return n * (n + 2) * (n + 4) * (n + 6) + MultiSeries(n-2);
+	return n * (n + 1) * (n + 2) + MultiSeries(n-1);
 }
 
 
