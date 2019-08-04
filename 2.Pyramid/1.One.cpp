@@ -12,7 +12,7 @@ build the  pyramid using recursion
 
 void Column(int start, int stop)
 {
-
+	cout << start ;
 }
 
 void Row(int n)
