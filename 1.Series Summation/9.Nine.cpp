@@ -15,7 +15,7 @@ int MultiSeries(int n)
 	}
 
 
-	return n * (n + 2) + MultiSeries(n-2);
+	return MultiSeries(n-2);
 }
 
 
