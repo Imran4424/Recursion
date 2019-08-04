@@ -13,6 +13,13 @@ build the  pyramid using recursion
 void Column(int start, int stop)
 {
 	cout << start ;
+
+	if (start == stop)
+	{
+		cout << endl;
+
+		return;
+	}
 }
 
 void Row(int n)
