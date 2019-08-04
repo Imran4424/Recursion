@@ -15,7 +15,7 @@ int SquareSeries(int n)
 	}
 
 
-	return SquareSeries(n-2);
+	return n*n + SquareSeries(n-2);
 }
 
 
