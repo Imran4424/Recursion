@@ -29,4 +29,4 @@ int main(int argc, char const *argv[])
 	cout << "The nth summtion of this series is: " << MultiSeries(n) << endl;
 
 	return 0;
-}
+42
