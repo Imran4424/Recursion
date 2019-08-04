@@ -18,7 +18,7 @@ int MultiSquareSeries(int n)
 
 	theN--; // decrementing one for this series 
 
-	return n*(theN)*(theN) + MultiSquareSeries(n-1);
+	return n*(n - theN)*(n - theN) + MultiSquareSeries(n-1);
 }
 
 
