@@ -10,9 +10,9 @@ build the  pyramid using recursion
 
 */
 
-void Column(int n)
+void Column(int start, int stop)
 {
-	
+
 }
 
 void Row(int n)
