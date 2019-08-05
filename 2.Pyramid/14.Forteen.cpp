@@ -1,10 +1,10 @@
 /*
 
-1
-1 0
-1 0 1
-1 0 1 0
 1 0 1 0 1
+1 0 1 0
+1 0 1
+1 0
+1
 
 build the  pyramid using recursion
 
@@ -36,7 +36,7 @@ void Column(int start, int stop)
 
 void Row(int start, int stop)
 {
-	Column(1, start); // secondary call 
+	Column(1, stop - start + 1); // secondary call 
 
 
 	if (start == stop)
