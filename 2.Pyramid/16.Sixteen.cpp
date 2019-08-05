@@ -15,7 +15,28 @@ using namespace std;
 
 void Column(int start, int stop)
 {
-	cout << start << " " ;
+	if (stop % 2 == 0)
+	{
+		if (start % 2 == 0)
+		{
+			cout << "0 ";
+		}
+		else
+		{
+			cout << "1 ";
+		}
+	}
+	else
+	{
+		if (start % 2 == 0)
+		{
+			cout << "1 ";
+		}
+		else
+		{
+			cout << "0 ";
+		}
+	}
 
 	if (start == stop)
 	{
