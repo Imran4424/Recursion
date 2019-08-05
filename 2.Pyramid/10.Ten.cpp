@@ -15,7 +15,7 @@ using namespace std;
 
 void Column(int start, int stop)
 {
-	cout << start << " " ;
+	cout << (char)(stop+64) << " " ;
 
 	if (start == stop)
 	{
