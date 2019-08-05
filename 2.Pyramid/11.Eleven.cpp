@@ -29,7 +29,7 @@ void Column(int start, int stop)
 
 void Row(int start, int stop)
 {
-	Column(1, start); // secondary call 
+	Column(1, stop - start); // secondary call 
 
 
 	if (start == stop)
