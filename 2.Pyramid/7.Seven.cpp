@@ -1,10 +1,10 @@
 /*
 
 1
-2 3
-3 4 5
-4 5 6 7
-5 6 7 8 9
+1 0
+1 0 1
+1 0 1 0
+1 0 1 0 1
 
 build the  pyramid using recursion
 
@@ -15,7 +15,14 @@ using namespace std;
 
 void Column(int start, int stop)
 {
-	cout << start << " " ;
+	if (start % 2 == 0)
+	{
+		cout << "0 ";
+	}
+	else
+	{
+		cout << "1 ";
+	}
 
 	if (start == stop)
 	{
@@ -29,10 +36,8 @@ void Column(int start, int stop)
 
 void Row(int start, int stop)
 {
-	Column(start, start + start - 1); // secondary call 
+	Column(1, start); // secondary call 
 
-	// start condition for cloumn is row's start
-	// start condition for cloumn is row's start + start - 1
 
 	if (start == stop)
 	{
