@@ -1,10 +1,10 @@
 /*
 
-6 7 8 9 10
-5 6 7 8
-4 5 6
-3 4
-2
+5 6 7 8 9
+4 6 7 8
+3 5 6
+2 3
+1
 
 build the  pyramid using recursion
 
