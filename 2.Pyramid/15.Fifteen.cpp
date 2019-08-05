@@ -29,7 +29,7 @@ void Column(int start, int stop)
 
 void Row(int start, int stop)
 {
-	Column(stop+1, stop+stop - start); // secondary call 
+	Column(stop + 2 - start, stop+stop - start + 1); // secondary call 
 
 	// start condition for cloumn is row's start+1
 	// start condition for cloumn is row's start+start
