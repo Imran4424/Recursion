@@ -1,10 +1,10 @@
 /*
 
-1
+0
 1 0
-1 0 1
+0 1 0
 1 0 1 0
-1 0 1 0 1
+0 1 0 1 0
 
 build the  pyramid using recursion
 
