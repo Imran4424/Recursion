@@ -21,7 +21,7 @@ void Space(int start, int stop)
 		return;
 	}
 	
-	cout << " ";
+	cout << "  "; // two spaces, one for digit space, one for space space
 
 	Space(start + 1, stop);
 }
