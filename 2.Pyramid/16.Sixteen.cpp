@@ -31,8 +31,8 @@ void Row(int start, int stop)
 {
 	Column(stop + 1 - start, stop+stop - (2*start) + 1); // secondary call 
 
-	// start condition for cloumn is row's stop + 2 - start
-	// start condition for cloumn is row's stop+stop - (2*start) + 2
+	// start condition for cloumn is row's stop + 1 - start
+	// start condition for cloumn is row's stop+stop - (2*start) + 1
 
 	if (start == stop)
 	{
