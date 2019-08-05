@@ -4,7 +4,7 @@ A
 B B
 C C C
 D D D D
-E E E E E
+E E E E
 
 build the  pyramid using recursion
 
@@ -15,7 +15,7 @@ using namespace std;
 
 void Column(int start, int stop)
 {
-	cout << stop << " " ;
+	cout << (char)stop+64 << " " ;
 
 	if (start == stop)
 	{
