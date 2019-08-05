@@ -15,17 +15,23 @@ using namespace std;
 
 void Space(int start, int stop)
 {
-	if (start == stop)
+
+	if (start > stop)
 	{
 		return;
 	}
+	
+	cout << " ";
+
+	Space(start + 1, stop);
 }
 
 void Column(int start, int stop)
 {
+
 	cout << start << " " ;
 
-	if (start == stop)
+	if (start >= stop)
 	{
 		cout << endl;
 
@@ -37,10 +43,11 @@ void Column(int start, int stop)
 
 void Row(int start, int stop)
 {
+	Space(1, stop - start);
+
 	Column(1, start); // secondary call 
 
-
-	if (start == stop)
+	if (start >= stop)
 	{
 		return;
 	}
