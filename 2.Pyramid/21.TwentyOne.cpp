@@ -13,6 +13,14 @@ build the  pyramid using recursion
 #include <iostream>
 using namespace std;
 
+void Space(int start, int stop)
+{
+	if (start == stop)
+	{
+		return;
+	}
+}
+
 void Column(int start, int stop)
 {
 	cout << start << " " ;
