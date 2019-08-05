@@ -19,22 +19,22 @@ void Column(int start, int stop)
 	{
 		if (start % 2 == 0)
 		{
-			cout << "1 ";
+			cout << "0 ";
 		}
 		else
 		{
-			cout << "0 ";
+			cout << "1 ";
 		}
 	}
 	else
 	{
 		if (start % 2 == 0)
 		{
-			cout << "0 ";
+			cout << "1 ";
 		}
 		else
 		{
-			cout << "1 ";
+			cout << "0 ";
 		}
 	}
 
