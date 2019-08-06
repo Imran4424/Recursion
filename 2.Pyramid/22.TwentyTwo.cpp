@@ -29,7 +29,7 @@ void Space(int start, int stop)
 void Column(int start, int stop)
 {
 
-	cout << start << " " ;
+	cout << stop << " " ;
 
 	if (start >= stop)
 	{
