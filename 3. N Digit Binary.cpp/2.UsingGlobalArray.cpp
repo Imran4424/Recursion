@@ -12,6 +12,21 @@ void Display()
 	}
 }
 
+void Binary(int i)
+{
+	if (i == bits)
+	{
+		Display();
+
+		return;
+	}
+
+	a[i] = 0;
+	Binary(i+1);
+
+	a[i] = 1;
+	Binary(i+1);
+}
 
 
 int main(int argc, char const *argv[])
