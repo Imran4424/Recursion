@@ -10,6 +10,8 @@ void Display()
 	{
 		cout << bin[i] ;
 	}
+
+	cout << endl;
 }
 
 void Binary(int i)
