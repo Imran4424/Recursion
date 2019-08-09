@@ -6,7 +6,10 @@ int bits;
 
 void Display()
 {
-	
+	for (int i = 0; i < bits; ++i)
+	{
+		/* code */
+	}
 }
 
 
