@@ -8,7 +8,7 @@ void Display()
 {
 	for (int i = 0; i < bits; ++i)
 	{
-		cout << bin[i] << endl;
+		cout << bin[i] ;
 	}
 }
 
