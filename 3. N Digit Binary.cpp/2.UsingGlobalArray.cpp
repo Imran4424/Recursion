@@ -21,10 +21,10 @@ void Binary(int i)
 		return;
 	}
 
-	a[i] = 0;
+	bin[i] = 0;
 	Binary(i+1);
 
-	a[i] = 1;
+	bin[i] = 1;
 	Binary(i+1);
 }
 
