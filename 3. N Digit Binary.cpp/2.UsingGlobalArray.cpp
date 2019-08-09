@@ -4,7 +4,10 @@ using namespace std;
 int bin[100];
 int bits;
 
-
+void Display()
+{
+	
+}
 
 
 
