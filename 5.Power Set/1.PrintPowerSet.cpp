@@ -52,7 +52,7 @@ void Binary(int i)
 
 		count++;
 
-		if (count != size)
+		if (count != NumberOfMembers())
 		{
 			cout << ", " ;
 		}
