@@ -26,6 +26,10 @@ void Binary(int i)
 	/*
 		binary has only two digits - 0 1
 
+		this means
+
+		for a single position it can only hold 0 or 1
+
 		that's why this functions recursive call is happening 2 times
 
 		for ternary this type of function call will happen 3 times
@@ -33,6 +37,7 @@ void Binary(int i)
 		for octal this type of function call will happen 8 times
 	*/
 
+	// this is 0 for per position
 	bin[i] = 0;
 	Binary(i+1);
 
