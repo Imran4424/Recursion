@@ -13,6 +13,7 @@ void DisplaySetSum()
 
 		firstTimeCall = false;
 	}
+	
 
 	int sum = 0;
 
