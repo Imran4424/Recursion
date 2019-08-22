@@ -3,6 +3,8 @@ using namespace std;
 
 int size, bits[100], members[100];
 
+int count = 0;
+
 void DisplayPowerSet()
 {
 	cout << "{" ;
@@ -13,18 +15,27 @@ void DisplayPowerSet()
 		{
 			if (i != size - 1)
 			{
-				cout << " "
+				cout << " " << members[i] << ",";
+			}
+			else
+			{
+				cout << " " << members[i] ;
 			}
 		}
 	}
 
-	cout << "}"
+	cout << "}" ;
 }
 
 void Binary(int i)
 {
 	if (size == i)
 	{
+		if (count == 0)
+		{
+			cout << "{ " ;
+		}
+
 		DisplayPowerSet();
 	}
 
