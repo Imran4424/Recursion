@@ -3,6 +3,14 @@ using namespace std;
 
 int size, bits[100], members[100];
 
+void Binary(int i)
+{
+	if (size == i)
+	{
+		DisplayPowerSet();
+	}
+}
+
 int main(int argc, char const *argv[])
 {
 	cout << "How many members" << endl;
