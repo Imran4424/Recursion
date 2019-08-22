@@ -27,6 +27,18 @@ void DisplayPowerSet()
 	cout << "}" ;
 }
 
+int NumberOfMembers()
+{
+	int number = 1;
+
+	for (int i = 0; i < size; ++i)
+	{
+		number = number * 2;
+	}
+
+	return number;
+}
+
 void Binary(int i)
 {
 	if (size == i)
