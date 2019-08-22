@@ -5,7 +5,17 @@ int size, bits[100], members[100];
 
 void DisplaySetSum()
 {
+	int sum = 0;
 
+	for (int i = 0; i < size; ++i)
+	{
+		if (1 == bits[i])
+		{
+			sum = sum + members[i];	
+		}
+	}
+
+	cout << sum << " ";
 }
 
 void Binary(int i)
