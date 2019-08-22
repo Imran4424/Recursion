@@ -23,6 +23,12 @@ void Binary(int i)
 		return;
 	}
 
+	/*
+		binary has only two digits - 0 1
+
+		
+	*/
+
 	bin[i] = 0;
 	Binary(i+1);
 
