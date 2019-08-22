@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std;
 
-int size, bits[100], members[100], setSum[100], total = 0;
+int size, bits[100], coin[100], setSum[100], total = 0;
 
 int minimum;
 
@@ -19,38 +19,26 @@ int abs(int x)
 	return x;
 }
 
-void CalculateSetSum()
-{
-	int sum = 0;
 
-	for (int i = 0; i < size; ++i)
-	{
-		if (1 == bits[i])
-		{
-			sum = sum + members[i];
-		}
-	}
-
-	if(minimum > abs(total - sum))
-	{
-		minimum = abs(total - sum);
-	}
-}
-
-void Binary(int i)
+void Binary(int i, int sum)
 {
 	if (i == size)
 	{
-		CalculateSetSum();
+		int experimentValue = abs(total - sum);	
+
+		if(minimum > experimentValue)
+		{
+			minimum = experimentValue;
+		}
 
 		return;
 	}
 
 	bits[i] = 0;
-	Binary(i+1);
+	Binary(i+1, sum);
 
 	bits[i] = 1;
-	Binary(i+1);
+	Binary(i+1, sum + coin[i]);
 }
 
 int main(int argc, char const *argv[])
@@ -64,14 +52,14 @@ int main(int argc, char const *argv[])
 
 		for (int i = 0; i < size; ++i)
 		{
-			cin >> members[i];
+			cin >> coin[i];
 
-			total += members[i];
+			total += coin[i];
 		}
 
 		minimum = total;
 
-		Binary(0);
+		Binary(0, 0);
 
 		cout << minimum << endl;
 	}
