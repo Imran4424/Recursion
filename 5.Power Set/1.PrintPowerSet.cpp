@@ -37,6 +37,13 @@ void Binary(int i)
 		}
 
 		DisplayPowerSet();
+
+		count++;
+
+		if (count != size)
+		{
+			
+		}
 	}
 
 	a[i] = 0;
