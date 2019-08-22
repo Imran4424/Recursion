@@ -7,19 +7,23 @@ int count = 0;
 
 void DisplayPowerSet()
 {
+	bool firstElement = true;
+
 	cout << "{" ;
 
 	for (int i = 0; i < size; ++i)
 	{
 		if (1 == bits[i])
 		{
-			if (i != size - 1)
+			if (firstElement)
 			{
-				cout << " " << members[i] << ",";
+				cout << members[i] ;
+
+				firstElement = false;
 			}
 			else
 			{
-				cout << " " << members[i] ;
+				cout << "," << members[i] ;
 			}
 		}
 	}
