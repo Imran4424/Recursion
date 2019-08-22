@@ -15,5 +15,9 @@ int main(int argc, char const *argv[])
 	{
 		cin >> members[i];
 	}
+
+
+	Binary(0); // starts the recursive call with 0
+
 	return 0;
 }
