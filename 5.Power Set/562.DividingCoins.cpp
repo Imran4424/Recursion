@@ -3,6 +3,8 @@ using namespace std;
 
 int size, bits[100], members[100];
 
+
+
 void Binary(int i)
 {
 	if (i == size)
