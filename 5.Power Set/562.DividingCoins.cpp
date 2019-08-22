@@ -15,7 +15,6 @@ void Binary(int i)
 
 	bits[i] = 1;
 	Binary(i+1);
-
 }
 
 int main(int argc, char const *argv[])
