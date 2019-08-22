@@ -19,6 +19,8 @@ int main(int argc, char const *argv[])
 
 	cin >> size;
 
+	cout << "enter the members" << endl;
+
 	for (int i = 0; i < size; ++i)
 	{
 		cin >> members[i];
