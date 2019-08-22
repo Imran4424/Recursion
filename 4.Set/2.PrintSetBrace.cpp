@@ -15,9 +15,11 @@ void DisplaySet()
 		}
 		else
 		{
-			cout << " " << members[i] << endl;
+			cout << " " << members[i] ;
 		}
 	}
+
+	cout << "}" << endl;
 }
 
 int main(int argc, char const *argv[])
