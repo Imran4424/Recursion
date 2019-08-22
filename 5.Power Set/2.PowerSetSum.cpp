@@ -7,6 +7,13 @@ bool firstTimeCall = true;
 
 void DisplaySetSum()
 {
+	if (firstTimeCall)
+	{
+		cout << "Power Set's subset sum is " << endl;
+
+		firstTimeCall = false;
+	}
+
 	int sum = 0;
 
 	for (int i = 0; i < size; ++i)
