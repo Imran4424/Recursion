@@ -3,6 +3,8 @@ using namespace std;
 
 int size, bits[100], members[100];
 
+bool firstTimeCall = true;
+
 void DisplaySetSum()
 {
 	int sum = 0;
@@ -40,7 +42,7 @@ int main(int argc, char const *argv[])
 
 	cin >> size;
 
-	cout << enter the members << endl;
+	cout << "enter the members" << endl;
 
 	for (int i = 0; i < size; ++i)
 	{
