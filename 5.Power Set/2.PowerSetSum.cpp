@@ -5,13 +5,14 @@ int size, bits[100], members[100];
 
 void DisplaySetSum()
 {
-	
+
 }
 
 void Binary(int i)
 {
 	if (size == i)
 	{
+		DisplaySetSum();
 
 		return;
 	}
