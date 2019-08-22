@@ -3,6 +3,20 @@ using namespace std;
 
 int size, bits[100], members[100];
 
+void DisplaySetSum()
+{
+	
+}
+
+void Binary(int i)
+{
+	if (size == i)
+	{
+
+		return;
+	}
+}
+
 int main(int argc, char const *argv[])
 {
 	cout << "how many members" << endl;
