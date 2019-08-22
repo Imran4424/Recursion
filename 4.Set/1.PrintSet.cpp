@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-int n, members[100];
+int size, members[100];
 
 void DisplaySet()
 {
-	for (int i = 0; i < n; ++i)
+	for (int i = 0; i < size; ++i)
 	{
 		cout << members[i] << " ";
 	}
@@ -17,9 +17,9 @@ int main(int argc, char const *argv[])
 {
 	cout << "How many members" << endl;
 
-	cin >> n;
+	cin >> size;
 
-	for (int i = 0; i < n; ++i)
+	for (int i = 0; i < size; ++i)
 	{
 		cin >> members[i];
 	}
