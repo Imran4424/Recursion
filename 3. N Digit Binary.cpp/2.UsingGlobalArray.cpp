@@ -38,9 +38,12 @@ void Binary(int i)
 	*/
 
 	// this is 0 for per position
+	// recusrive this will happen for every position
 	bin[i] = 0;
 	Binary(i+1);
 
+	// this is 1 for per position
+	// recusrive this will happen for every position
 	bin[i] = 1;
 	Binary(i+1);
 }
