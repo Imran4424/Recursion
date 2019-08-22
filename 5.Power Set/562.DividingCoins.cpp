@@ -11,7 +11,12 @@ int main(int argc, char const *argv[])
 
 	while(test--)
 	{
+		cin >> size;
 
+		for (int i = 0; i < size; ++i)
+		{
+			cin >> members[size];
+		}
 	}
 	return 0;
 }
