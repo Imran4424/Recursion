@@ -48,12 +48,14 @@ void Binary(int i)
 		{
 			cout << " }" ;
 		}
+
+		return;
 	}
 
-	a[i] = 0;
+	bits[i] = 0;
 	Binary(i + 1);
 
-	a[i] = 1;
+	bits[i] = 1;
 	Binary(i + 1);
 }
 
