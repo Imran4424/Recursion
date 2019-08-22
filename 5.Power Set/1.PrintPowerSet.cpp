@@ -42,7 +42,11 @@ void Binary(int i)
 
 		if (count != size)
 		{
-			
+			cout << ", " ;
+		}
+		else
+		{
+			cout << " }" ;
 		}
 	}
 
