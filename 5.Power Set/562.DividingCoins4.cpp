@@ -11,7 +11,7 @@ const int sizeSum = 50001;
 
 int dp[mSize][sizeSum];
 
-int size, bits[mSize], coin[mSize], setSum[mSize], total = 0;
+int size, bits[mSize], coin[mSize], setSum[mSize], total;
 
 int minimum;
 
@@ -50,31 +50,23 @@ int  Binary(int i, int sum)
 	{
 		int sum2 = total - sum;
 
-		int experimentValue = abs(sum - sum2);
-
-		if(minimum > experimentValue)
-		{
-			minimum = experimentValue;
-		}
-		
-		dp[i][sum] = experimentValue;
-
-		return;
+	
+		return dp[i][sum] = abs(sum - sum2);
 	}
 
 	bits[i] = 0;
-	int left = Binary(i+1, sum);
+	left = Binary(i+1, sum);
 
 	bits[i] = 1;
-	int right = Binary(i+1, sum + coin[i]);
+	right = Binary(i+1, sum + coin[i]);
 
 	if (left < right)
 	{
-		return left;
+		return dp[i][sum] = left;
 	}
 	else
 	{
-		return right;
+		return dp[i][sum] = right;
 	}
 }
 
@@ -87,6 +79,9 @@ int main(int argc, char const *argv[])
 
 	while(test--)
 	{
+		total = 0; // clearing values for every test case
+		Init();
+
 		// cin >> size;
 		scanf("%d", &size);
 
@@ -98,11 +93,8 @@ int main(int argc, char const *argv[])
 			total += coin[i];
 		}
 
-		minimum = total;
 
-		Init();
-
-		Binary(0, 0);
+		minimum = Binary(0, 0);
 
 		cout << minimum << endl;
 	}

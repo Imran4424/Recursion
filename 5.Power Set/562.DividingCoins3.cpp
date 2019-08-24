@@ -1,5 +1,5 @@
 /*
-	this solution will ended up with time limit excedeed status
+	this solution is accepted
 */
 
 #include <iostream>
@@ -11,7 +11,7 @@ const int sizeSum = 50001;
 
 int dp[mSize][sizeSum];
 
-int size, bits[mSize], coin[mSize], setSum[mSize], total = 0;
+int size, bits[mSize], coin[mSize], setSum[mSize], total;
 
 int minimum;
 
@@ -62,9 +62,20 @@ void Binary(int i, int sum)
 
 	bits[i] = 0;
 	Binary(i+1, sum);
+	int left = dp[i+1][sum];
 
 	bits[i] = 1;
 	Binary(i+1, sum + coin[i]);
+	int right = dp[i+1][sum + coin[i]];
+
+	if (left < right)
+	{
+		dp[i][sum] = left;
+	}
+	else
+	{
+		dp[i][sum] = right;
+	}
 }
 
 int main(int argc, char const *argv[])
@@ -75,7 +86,11 @@ int main(int argc, char const *argv[])
 
 
 	while(test--)
-	{
+	{	
+		// clearing values for every test case
+		total = 0;
+		Init();
+
 		// cin >> size;
 		scanf("%d", &size);
 
@@ -89,7 +104,6 @@ int main(int argc, char const *argv[])
 
 		minimum = total;
 
-		Init();
 
 		Binary(0, 0);
 
