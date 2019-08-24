@@ -33,9 +33,11 @@ void CalculateSetSum()
 
 	int sum2 = total - sum;
 
-	if(minimum > abs(sum - sum2))
+	int diff = abs(sum - sum2);
+
+	if(minimum > diff)
 	{
-		minimum = abs(sum - sum2);
+		minimum = diff;
 	}
 }
 
