@@ -124,7 +124,6 @@ int main(int argc, char const *argv[])
 
 		minimum = total;
 
-
 		Binary(0, 0);
 
 		cout << minimum << endl;
