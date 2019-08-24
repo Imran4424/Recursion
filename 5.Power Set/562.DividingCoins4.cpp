@@ -1,5 +1,5 @@
 /*
-	this solution will ended up with time limit excedeed status
+	this solution is accepted
 */
 
 #include <iostream>
