@@ -5,8 +5,8 @@
 #include <iostream>
 using namespace std;
 
-const mSize = 101;
-const sizeSum = 50001;
+const int  mSize = 101;
+const int sizeSum = 50001;
 
 int dp[mSize][sizeSum];
 
@@ -40,16 +40,20 @@ void Binary(int i, int sum)
 {
 	if (dp[i][sum] >= 0)
 	{
-		return dp[i][sum];
+		return;
 	}
 
 	if (i == size)
 	{
-		int experimentValue = abs(total - sum);	
+		int sum2 = total - sum;
+
+		int experimentValue = abs(sum - sum2);
 
 		if(minimum > experimentValue)
 		{
 			minimum = experimentValue;
+
+			dp[i][sum] = experimentValue;
 		}
 
 		return;

@@ -33,11 +33,11 @@ void CalculateSetSum()
 
 	int sum2 = total - sum;
 
-	int diff = abs(sum - sum2);
+	int experimentValue = abs(sum - sum2);
 
-	if(minimum > diff)
+	if(minimum > experimentValue)
 	{
-		minimum = diff;
+		minimum = experimentValue;
 	}
 }
 
