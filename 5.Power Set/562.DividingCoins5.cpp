@@ -17,7 +17,7 @@ int minimum;
 
 void Init() // initializing the dp
 {
-	for (int i = 0; i <= size; ++i)
+	for (int i = 0; i <= size; ++i) // initialize only the required size
 	{
 		for (int j = 0; j <= total; ++j)
 		{
