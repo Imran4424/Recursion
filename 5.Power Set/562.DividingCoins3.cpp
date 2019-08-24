@@ -8,6 +8,8 @@ using namespace std;
 const mSize = 101;
 const sizeSum = 50001;
 
+int dp[mSize][sizeSum];
+
 int size, bits[mSize], coin[mSize], setSum[mSize], total = 0;
 
 int minimum;
