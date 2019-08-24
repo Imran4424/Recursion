@@ -37,11 +37,13 @@ int abs(int x)
 }
 
 
-void Binary(int i, int sum)
+int  Binary(int i, int sum)
 {
+	int left, right; // both holding left and right sub tree values
+
 	if (dp[i][sum] >= 0)
 	{
-		return;
+		return dp[i][sum];
 	}
 
 	if (i == size)
@@ -61,10 +63,19 @@ void Binary(int i, int sum)
 	}
 
 	bits[i] = 0;
-	Binary(i+1, sum);
+	int left = Binary(i+1, sum);
 
 	bits[i] = 1;
-	Binary(i+1, sum + coin[i]);
+	int right = Binary(i+1, sum + coin[i]);
+
+	if (left < right)
+	{
+		return left;
+	}
+	else
+	{
+		return right;
+	}
 }
 
 int main(int argc, char const *argv[])
