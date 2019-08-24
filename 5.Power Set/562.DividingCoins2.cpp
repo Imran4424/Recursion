@@ -24,11 +24,13 @@ void Binary(int i, int sum)
 {
 	if (i == size)
 	{
-		int experimentValue = abs(total - sum);	
+		int sum2 = total - sum;
 
-		if(minimum > experimentValue)
+		int diff = abs(sum - sum2)
+
+		if(minimum > )
 		{
-			minimum = experimentValue;
+			minimum = diff;
 		}
 
 		return;
