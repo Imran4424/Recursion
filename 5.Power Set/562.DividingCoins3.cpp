@@ -38,6 +38,11 @@ int abs(int x)
 
 void Binary(int i, int sum)
 {
+	if (dp[i][sum] >= 0)
+	{
+		return dp[i][sum];
+	}
+
 	if (i == size)
 	{
 		int experimentValue = abs(total - sum);	
@@ -74,6 +79,8 @@ int main(int argc, char const *argv[])
 		}
 
 		minimum = total;
+
+		Init();
 
 		Binary(0, 0);
 
