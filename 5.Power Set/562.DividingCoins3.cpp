@@ -14,6 +14,17 @@ int size, bits[mSize], coin[mSize], setSum[mSize], total = 0;
 
 int minimum;
 
+void Init()
+{
+	for (int i = 0; i < mSize; ++i)
+	{
+		for (int j = 0; j < sizeSum; ++j)
+		{
+			dp[i][j] = -1;
+		}
+	}
+}
+
 int abs(int x)
 {
 	if (x < 0)
