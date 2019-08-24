@@ -31,9 +31,11 @@ void CalculateSetSum()
 		}
 	}
 
-	if(minimum > abs(total - sum))
+	int sum2 = total - sum;
+
+	if(minimum > abs(sum - sum2))
 	{
-		minimum = abs(total - sum);
+		minimum = abs(sum - sum2);
 	}
 }
 
