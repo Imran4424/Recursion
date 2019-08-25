@@ -1,4 +1,8 @@
 /*
+	this is a UVA problem
+
+	562 - Dividing Coins
+
 	this solution is accepted
 */
 
