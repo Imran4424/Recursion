@@ -1,3 +1,9 @@
+/*
+	this is a UVA problem
+
+	10130 - Super Scale	
+*/
+
 #include <stdio.h>
 
 int number, people;
