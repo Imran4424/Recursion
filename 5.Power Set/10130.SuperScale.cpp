@@ -21,7 +21,7 @@ void ReadCase()
 
 	for (int i = 0; i < people; ++i)
 	{
-		
+		scanf("%d", &canCarry[i]);
 	}
 
 }
