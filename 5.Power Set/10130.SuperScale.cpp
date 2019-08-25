@@ -3,6 +3,23 @@
 int number, people;
 int *price, *weight, *canCarry;
 
+int bits[1001];
+
+int Solve(int i, sum)
+{
+	if (i == number)
+	{
+		/* code */
+	}
+
+	bits[i] = 0;
+	int left = Solve(i+1, sum);
+
+	bits[i] = 1;
+	int right = Solve(i+1, sum)
+
+}
+
 void ReadCase()
 {
 	scanf("%d", &number);
