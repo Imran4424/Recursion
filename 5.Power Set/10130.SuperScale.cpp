@@ -17,7 +17,12 @@ void ReadCase()
 
 	scanf("%d", &people);
 
-	canCarry = new int 
+	canCarry = new int[people];
+
+	for (int i = 0; i < people; ++i)
+	{
+		
+	}
 
 }
 
