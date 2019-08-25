@@ -12,8 +12,13 @@ void ReadCase()
 
 	for (int i = 0; i < number; ++i)
 	{
-		scanf("%d %d", &price, &weight);
+		scanf("%d %d", &price[i], &weight[i]);
 	}
+
+	scanf("%d", &people);
+
+	canCarry = new int 
+
 }
 
 int main(int argc, char const *argv[])
