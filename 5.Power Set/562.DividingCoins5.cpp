@@ -4,6 +4,8 @@
 	562 - Dividing Coins
 
 	this solution is accepted
+
+	here we used dynamic programming top down approach
 */
 
 #include <iostream>

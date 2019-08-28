@@ -4,6 +4,8 @@
 	562 - Dividing Coins
 
 	this solution is accepted
+
+	here we used dynamic programming top down approach
 */
 
 #include <iostream>
@@ -102,5 +104,6 @@ int main(int argc, char const *argv[])
 
 		cout << minimum << endl;
 	}
+	
 	return 0;
 }
