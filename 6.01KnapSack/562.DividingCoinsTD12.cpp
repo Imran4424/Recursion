@@ -7,7 +7,7 @@
 
 	here we used dynamic programming top down approach
 
-	Runtime: 0.070s
+	Runtime: 0.040s
 */
 
 #include <iostream>
@@ -75,13 +75,6 @@ void Binary(int i, int sum)
 	                       //   and sum wil be the trown sum
 			      //    thrown sum is sum because this digit is 0
 
-	bits[i] = 1;
-	Binary(i+1, sum + coin[i]);
-	int right = dp[i+1][sum + coin[i]]; // for storing right sub tree subset sum
-			                   //  right sub tree will be next iteration i
-	                                  //   and sum wil be the trown sum
-				         //    thrown sum is sum + coin[i] because this digit is 1
-
 
 	if (!left)
 	{
@@ -89,6 +82,15 @@ void Binary(int i, int sum)
 
 		return;
 	}
+
+
+	bits[i] = 1;
+	Binary(i+1, sum + coin[i]);
+	int right = dp[i+1][sum + coin[i]]; // for storing right sub tree subset sum
+			                   //  right sub tree will be next iteration i
+	                                  //   and sum wil be the trown sum
+				         //    thrown sum is sum + coin[i] because this digit is 1
+
 
 	/*
 		for this node

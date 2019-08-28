@@ -7,7 +7,7 @@
 
 	here we used dynamic programming top down approach
 
-	Runtime: 0.070s
+	Runtime: 0.030s
 */
 
 #include <iostream>
