@@ -6,6 +6,19 @@ int bits;
 
 void Display()
 {
+	// skipping the values which have duplicate digits
+
+	for (int i = 0; i < bits; ++i)
+	{
+		for(int j = i+1; j < bits; ++j)
+		{
+			if (bin[i] == bin[j])
+			{
+				return;
+			}
+		}
+	}
+
 	for (int i = 0; i < bits; ++i)
 	{
 		cout << bin[i] ;
