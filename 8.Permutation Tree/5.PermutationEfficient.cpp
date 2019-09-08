@@ -1,3 +1,9 @@
+/*
+	this is permuation of sets in efficient time
+
+	using backtracking
+*/
+
 #include <iostream>
 using namespace std;
 
