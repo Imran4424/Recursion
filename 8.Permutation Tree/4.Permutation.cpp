@@ -38,10 +38,14 @@ void Permutation(int i)
 
 	for (int j = 0; j < bits; ++j) // this is building the initialization for  
 	{                             //  permutation block, but it has duplicates entries
-		                     //   which is not allowed in permutation
-		bin[i] = j;
+		
+		// skipping the values which have duplicate digits, to make this permutation
+		if (IsUnique(i, j)) 
+		{
+			bin[i] = j;
 
-		Permutation(i+1);
+			Permutation(i+1);
+		}		
 	}
 }
 
