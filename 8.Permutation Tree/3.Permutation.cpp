@@ -6,7 +6,7 @@ int bits;
 
 void Display()
 {
-	// skipping the values which have duplicate digits
+	// skipping the values which have duplicate digits, to make this permutation
 
 	for (int i = 0; i < bits; ++i)
 	{
