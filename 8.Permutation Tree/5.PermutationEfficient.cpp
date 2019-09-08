@@ -2,7 +2,7 @@
 using namespace std;
 
 int bin[100];
-int visited[100];
+bool visited[100];
 int bits;
 
 
@@ -10,7 +10,7 @@ void InitVisited()
 {
 	for (int i = 0; i < 100; ++i)
 	{
-		visited[i] = 0;
+		visited[i] = false;
 	}
 }
 
@@ -35,10 +35,17 @@ void Permutation(int i)
 
 	for (int j = 0; j < bits; ++j) // this is building the initialization for  
 	{                             //  permutation block, but it has duplicates entries
-		                     //   which is not allowed in permutation
-		bin[i] = j;
+		
+		// skipping the values which have duplicate digits, to make this permutation
+		if (!visited[j]) 
+		{
+			bin[i] = j;
+			visited[j] = 1;
 
-		Permutation(i+1);
+			Permutation(i+1);
+
+			visited[j] = 0; // backtracking 
+		}		
 	}
 }
 
@@ -48,6 +55,8 @@ int main(int argc, char const *argv[])
 	cin >> bits;
 
 	cout << endl ;
+
+	InitVisited();
 
 	Permutation(0);
 
