@@ -18,7 +18,7 @@ bool IsUnique(int x, int y)
 {
 	for (int i = 0; i < x; ++i)
 	{
-		if (y == a[i])
+		if (y == bin[i])
 		{
 			return false;
 		}
