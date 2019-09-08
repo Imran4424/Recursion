@@ -24,7 +24,8 @@ void Permutation(int i)
 	}
 
 	for (int j = 0; j < bits; ++j) // this is building the initialization for  
-	{                             //  permutation block
+	{                             //  permutation block, but it has duplicates entries
+		                     //   which is not allowed in permutation
 		bits[i] = j;
 
 		Permutation(i+1);
