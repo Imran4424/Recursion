@@ -4,6 +4,11 @@ using namespace std;
 int bin[100];
 int bits;
 
+void Permutation(int i)
+{
+
+}
+
 int main(int argc, char const *argv[])
 {
 	cout << "enter the number of bits" << endl;
@@ -11,7 +16,7 @@ int main(int argc, char const *argv[])
 
 	cout << endl ;
 
-	Binary(0);
-	
+	Permutation(0);
+
 	return 0;
 }
