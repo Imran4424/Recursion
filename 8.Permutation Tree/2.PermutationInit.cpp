@@ -22,6 +22,13 @@ void Permutation(int i)
 
 		return;
 	}
+
+	for (int j = 0; j < bits; ++j) // this is building the initialization for  
+	{                             //  permutation block
+		bits[i] = j;
+
+		Permutation(i+1);
+	}
 }
 
 int main(int argc, char const *argv[])
