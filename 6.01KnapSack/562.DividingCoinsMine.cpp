@@ -14,7 +14,7 @@ void Init()
 {
 	for (int i = 0; i <= coinNum; ++i)
 	{
-		for (int j = 0; j <= coinNum * 500; ++j)
+		for (int j = 0; j <= totalSum; ++j)
 		{
 			dpSum[i][j] = -1;
 		}
